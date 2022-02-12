@@ -34,9 +34,9 @@
         <div
           class="container-fluid d-flex justify-content-center align-items-center"
         >
-          <a class="navbar-brand fs-1 color1" href="#">
+          <a class="navbar-brand fs-1 text-white" href="#">
             <span class="me-4">
-              <i class="fa-solid fa-file-invoice-dollar text-success"></i>
+              <i class="fa-solid fa-file-invoice-dollar text-white"></i>
             </span>
             Invoice Maker
           </a>
@@ -45,26 +45,61 @@
     </header>
     <main>
       <section class="container bg-white border rounded my-4 p-4">
-        <marquee width="100%" direction="right" height="70px">
-          <h5 class="p-2 color1">Please Enter the Data</h5>
+        <marquee  width="100%" direction="right" height="70px">
+          <h5 class="p-2 color1 ">Please Enter the Data</h5>
         </marquee>
+        
+        </div>
         <div class="input-group color2">
           <span class="p-2 fs-3">User's Information </span>
           <input
             type="text"
             class="form-control"
-            placeholder="User's Information"
+            id="user-info"
+            placeholder="Enter Information"
             aria-label="Recipient's username with two button addons"
           />
-          <button class="btn btn-success user-submit" type="button">
+          <button class="btn btn-success" id="user-info-submit" type="button">
             Submit
           </button>
-          <button class="btn btn-danger user-cancel" type="button">
+          <button
+            class="btn btn-danger user-info-cancel"
+            id="user-info-cancel"
+            type="button"
+          >
             Cancel
           </button>
         </div>
       </section>
-      <section class="container bg-white border rounded my-4 p-4">hi</section>
+      <section class="container bg-white border rounded my-4 p-4">
+        <h3 class="color2">Invoice Id: #246</h3>
+        <div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Date</h5>
+                <span id="date"></span>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Invoice To</h5>
+                <p class="card-text bg-white p-2" id="user-info-card">
+                  User Information
+                </p>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Seller</h5>
+                <p class="card-text bg-white p-2">
+                  abcd inc hellow@apexo.com 16 ctg, Bangladesh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/index.js"></script>

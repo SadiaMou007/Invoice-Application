@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif !important;
-  background-color: rgb(191, 191, 226);
+  background-color: rgba(191, 191, 226, 0.438);
 }
 .nav {
   background-color: rgb(26, 26, 122);
