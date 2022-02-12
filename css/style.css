@@ -1,0 +1,13 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: rgb(191, 191, 226);
+}
+.nav {
+  background-color: rgb(26, 26, 122);
+}
+.color1 {
+  color: rgb(37, 197, 197) !important;
+}
+.color2 {
+  color: darkmagenta;
+}
