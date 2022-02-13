@@ -2,7 +2,8 @@ body {
   font-family: "Poppins", sans-serif !important;
   background-color: rgba(191, 191, 226, 0.438);
 }
-.nav {
+.nav,
+footer {
   background-color: rgb(26, 26, 122);
 }
 .color1 {
@@ -12,7 +13,7 @@ body {
   color: darkmagenta;
 }
 .color3 {
-  background-color: rgba(148, 213, 229, 0.651);
+  background-color: gray;
 }
 .inputGroup {
   width: 80%;

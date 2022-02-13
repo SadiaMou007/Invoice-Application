@@ -51,7 +51,7 @@
         
         </div>
         <div class="input-group color2">
-          <span class="p-2 fs-3">User's Information </span>
+          <span class="p-2 fs-3 fw-bold">User's Information </span>
           <input
             type="text"
             class="form-control"
@@ -77,42 +77,42 @@
             <input type="text" class="form-control " id="item-name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text color2" id="inputGroup-sizing-sm">Price</span>
+            <span class="input-group-text color2 fw-bold" id="inputGroup-sizing-sm">Price</span>
             <input type="number" class="form-control" aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-sm" id="item-price-input" />
         </div>
         <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text color2" id="inputGroup-sizing-sm">Quantity</span>
+            <span class="input-group-text color2 fw-bold" id="inputGroup-sizing-sm">Quantity</span>
             <input type="number"  class="form-control"  aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-sm" id="item-quantity-input" />
         </div>
-        <button class="btn btn-success " id="item-submit">Submit</button>
+        <button class="btn btn-success fw-bold" id="item-submit">Submit</button>
 
         </div>
 
       </section>
-      <section class="color3 container border rounded my-4 p-4">
-        <h3 class="color2">Invoice Id: #246</h3>
-        <div>
+      <section class="bg-white container border rounded mt-4 mb-5 p-4">
+        <h3 class="color2 fw-bold my-4">Invoice Id: #246</h3>
+        <div class="p-2">
           <div class="card-group">
-            <div class="card">
+            <div class="card bg-light">
               <div class="card-body">
-                <h5 class="card-title color1">Date</h5>
+                <h5 class="card-title color1 fw-bold">Date</h5>
                 <span id="date"></span>
               </div>
             </div>
             <div class="card bg-light">
               <div class="card-body">
-                <h5 class="card-title color1">Invoice To</h5>
-                <p class="card-text bg-white p-2" id="user-info-card">
+                <h5 class="card-title color1 fw-bold">Invoice To</h5>
+                <p class="card-text  p-2" id="user-info-card">
                   User Information
                 </p>
               </div>
             </div>
             <div class="card bg-light">
               <div class="card-body">
-                <h5 class="card-title color1">Seller</h5>
-                <p class="card-text bg-white p-2">
+                <h5 class="card-title color1 fw-bold">Seller</h5>
+                <p class="card-text  p-2">
                   abcd inc hellow@apexo.com 16 ctg, Bangladesh
                 </p>
               </div>
@@ -120,8 +120,8 @@
           </div>
         </div>
         <!-- table -->
-        <div class=" my-4">
-          <table class="table bg-light ">
+        <div class=" my-5 p-2">
+          <table class="table bg-light text-center ">
             <thead>  
                 <tr>
                   <th scope="col">Name</th>
@@ -132,26 +132,35 @@
                
             </thead>
             <tbody id="t-body">
-              <tr>
-                <td>nnn</td>
-                <td>50</td>
-                <td>2</td>
-                <td>100</td>
-              </tr>
             
             </tbody>
             <tfoot>
+              <tr>  
+                <tr>
+                  <td colspan="3" class="text-end fw-bold color1">SubTotal</td>
+                  <td class="text-right" >$<span id="sub-total">0</span></td>
+              </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Total:</td>
+                  <td colspan="3" class="text-end fw-bold color1">Tax</td>
+                  <td class="text-right" >$ <span id="tax">0</span></td>
+              </tr>
+              <tr>
+                  <td colspan="3" class="text-end fw-bold color1">Grand Total</td>
+                  <td class="text-right fw-bold" >$ <span id="grand-total">0</span> </td>
               </tr>
             </tfoot>
           </table>
         </div>
       </section>
     </main>
+    <footer>
+      <footer class='text-white fw-bold text-center '>
+        <p class='p-4'>
+            All rights reserve @sadia
+        </p>
+
+    </footer>
+    </footer>
 
     <script src="js/index.js"></script>
     <script src="js/app.js"></script>
