@@ -70,20 +70,40 @@
             Cancel
           </button>
         </div>
+        <h5 class="my-4 bg-light color1 p-4 text-center">Please Enter the Item Details</h5>
+        <div class="inputGroup m-4 p-4 mx-auto bg-light">
+          <div class="input-group mb-3">
+            <span class="input-group-text color2" id="inputGroup-sizing-default">Item Name</span>
+            <input type="text" class="form-control " id="item-name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text color2" id="inputGroup-sizing-sm">Price</span>
+            <input type="number" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm" id="item-price-input" />
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text color2" id="inputGroup-sizing-sm">Quantity</span>
+            <input type="number"  class="form-control"  aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm" id="item-quantity-input" />
+        </div>
+        <button class="btn btn-success " id="item-submit">Submit</button>
+
+        </div>
+
       </section>
-      <section class="container bg-white border rounded my-4 p-4">
+      <section class="color3 container border rounded my-4 p-4">
         <h3 class="color2">Invoice Id: #246</h3>
         <div>
           <div class="card-group">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Date</h5>
+                <h5 class="card-title color1">Date</h5>
                 <span id="date"></span>
               </div>
             </div>
             <div class="card bg-light">
               <div class="card-body">
-                <h5 class="card-title">Invoice To</h5>
+                <h5 class="card-title color1">Invoice To</h5>
                 <p class="card-text bg-white p-2" id="user-info-card">
                   User Information
                 </p>
@@ -91,13 +111,44 @@
             </div>
             <div class="card bg-light">
               <div class="card-body">
-                <h5 class="card-title">Seller</h5>
+                <h5 class="card-title color1">Seller</h5>
                 <p class="card-text bg-white p-2">
                   abcd inc hellow@apexo.com 16 ctg, Bangladesh
                 </p>
               </div>
             </div>
           </div>
+        </div>
+        <!-- table -->
+        <div class=" my-4">
+          <table class="table bg-light ">
+            <thead>  
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                </tr>
+               
+            </thead>
+            <tbody id="t-body">
+              <tr>
+                <td>nnn</td>
+                <td>50</td>
+                <td>2</td>
+                <td>100</td>
+              </tr>
+            
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total:</td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </section>
     </main>

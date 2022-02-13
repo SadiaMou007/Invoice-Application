@@ -11,3 +11,9 @@ body {
 .color2 {
   color: darkmagenta;
 }
+.color3 {
+  background-color: rgba(148, 213, 229, 0.651);
+}
+.inputGroup {
+  width: 80%;
+}
